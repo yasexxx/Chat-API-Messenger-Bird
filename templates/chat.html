@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!--  This file has been downloaded from bootdey.com    @bootdey on twitter -->
+    <!--  All snippets are MIT license http://bootdey.com/license -->
+    <title>Chat App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/messagebird@3.6.4/lib/messagebird.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="m-1">
+        <h3>MessageBird Message: </h3>
+        <div class="d-flex my-1 align-items-center">
+          <h5 class="m-4">Access Key: </h5>
+          <input type="text" class="form-control" style="width: 300px;" id="accessKey" placeholder="API key" />
+        </div>
+        <div class="card">
+          <div class="d-flex flex-column">
+            <div class="p-3" id="chatContent" style="height: 450px; width: 100%">
+            </div>
+            <div class="d-flex justify-content-between px-5 pt-3 bg-info">
+              <div class="mb-3">
+                <input type="text" class="form-control" style="width: 50vw;" id="messageText" placeholder="Type message here">
+              </div>
+              <div>
+                <button type="button" id="submitBtn" class="btn btn-dark">Send Message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+    <script type="text/javascript"></script>
+  </body>
+</html>
+
+
+

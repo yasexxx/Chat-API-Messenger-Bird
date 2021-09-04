@@ -1,0 +1,9 @@
+body {
+    margin-top: 20px;
+    background: #ebeef0;
+  }
+  .c-flex{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+  }
