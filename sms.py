@@ -59,16 +59,3 @@ class SMSClient:
             msg = None
         finally:
             return msg
-
-
-# if __name__ == "__main__":
-#     channel_id = "aac53040-053e-4a8b-a5bc-cc2f71136a7b"
-#     receipient = "9700551910"
-#     type_msg = "text"
-#     content_parag = "Helloo messageBird"
-#     ACCESS_KEY = "iNExJakwOx2F2w37CzwWGi7aF"
-#     ID = "5a65cea8-ee01-40c4-a841-a152d2b4d71a"
-#     sms = SMSClient(ACCESS_KEY, ID)
-#     msg_id = message.id
-#     read_msg = sms.read_message(msg_id)
-#     print(read_msg)
